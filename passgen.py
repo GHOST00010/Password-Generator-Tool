@@ -1,3 +1,6 @@
+
+### Here is the code for terminal based users. If you wanted you can you it, as per your wish. ###
+
 # import random
 # print("This program is used to generate strong passwords to save your account from attackers. ")
 

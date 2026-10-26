@@ -1,57 +1,108 @@
-# Installation Guide
+# Password Generator Tool — Installation Guide
 
-This guide explains how to install and run the **Password Generator Tool** on your computer.
+This guide explains how to download and run the **Password Generator Tool** on a Windows computer.
 
-## Method 1: Run the Pre-Built Executable (Windows)
+## Method 1: Run the Windows Executable (Recommended)
 
 Use this method if you want to run the application without installing Python.
 
-1. **Download the repository:** Clone or download the project from GitHub.
-2. **Open the project folder:** Navigate to the downloaded project directory.
-3. **Locate the executable:** Open the `dist` folder and find `passgen.exe` (or `main.exe`, depending on the filename).
-4. **Launch the application:** Double-click the executable or run it from PowerShell:
+### Step 1: Download the Project
 
-   ```powershell
-   .\dist\passgen.exe
-   ```
+Open the GitHub repository:
 
-   If you are already inside the `dist` directory, run:
+**[Password Generator Tool — GitHub](https://github.com/GHOST00010/Password-Generator-Tool)**
 
+Click **Code → Download ZIP** to download the project, then extract the ZIP file to a folder on your computer.
+
+Alternatively, if the project provides `passgen.exe` under **Releases**, download the executable from there.
+
+### Step 2: Locate the Executable
+
+Open the extracted project folder and find the ***`dist`*** folder.
+
+Inside it, locate:
+
+***`passgen.exe`***
+
+### Step 3: Run the Application
+
+Double-click ***`passgen.exe`*** to launch the Password Generator Tool.
+
+If you prefer to run it using PowerShell:
+
+1. Open the project folder.
+2. Open the ***`dist`*** folder.
+3. Click the address bar, type `powershell`, and press Enter.
+4. Run the following command:
    ```powershell
    .\passgen.exe
    ```
 
-**Note:** The executable must be included in the download or available separately from the project's GitHub Releases.
+**Note:** The executable must be included in the downloaded project or downloaded separately from GitHub Releases. If the `dist` folder or executable is missing, download the executable from the project's Releases section, if available.
+
+This method does not require a separate Python installation.
 
 ---
 
 ## Method 2: Run from Python Source Code
 
-Use this method if you have Python installed. It is suitable for Windows, macOS, and Linux.
+Use this method if you want to run or modify the Python source code.
 
-### 1. Prerequisites
+### Step 1: Install Python
 
-Install Python 3.x from [python.org](https://www.python.org/downloads/).
+Download and install Python 3 from the official website:
 
-Verify the installation by running:
+[https://www.python.org/downloads/](https://www.python.org/downloads/)
+
+During installation on Windows, enable **Add Python to PATH** if that option is shown.
+
+Verify the installation by opening Command Prompt or PowerShell and running:
 
 ```bash
 python --version
 ```
 
-On some systems, you may need to use `python3 --version` instead.
+### Step 2: Download the Source Code
 
-### 2. Download the Project
+Open the repository:
 
-Clone the repository and navigate to the project directory:
+[https://github.com/GHOST00010/Password-Generator-Tool](https://github.com/GHOST00010/Password-Generator-Tool)
+
+Click **Code → Download ZIP**, then extract the downloaded ZIP file.
+
+Alternatively, if Git is installed, run:
 
 ```bash
-git clone <YOUR-REPOSITORY-URL>
-cd passgen
+git clone https://github.com/GHOST00010/Password-Generator-Tool.git
 ```
 
-Alternatively, download the repository as a ZIP file and extract it.
+Open the downloaded project folder. The folder name may be `Password-Generator-Tool`, depending on how you downloaded it.
 
-### 3. Run.............
+### Step 3: Run the Python Program
 
-### be safe be secure...!
+Open a terminal in the project folder containing `passgen.py` and run:
+
+```bash
+python passgen.py
+```
+
+The program should start if Python is installed correctly and the source code is available.
+
+---
+
+## Troubleshooting
+
+- **`passgen.exe` is missing:** Check the project's GitHub Releases section or confirm that the executable was included in the ZIP download.
+- **Windows displays a security warning:** Only run the executable if you trust its source. Verify that it came from the official project repository. Do not bypass warnings unless you have verified the file is safe.
+- **The application closes immediately:** Try launching it from PowerShell to see whether an error message appears.
+- **`python` is not recognized:** Install Python and ensure it is added to PATH, then reopen the terminal.
+
+## Important Information
+
+- The Windows executable is built using PyInstaller.
+- Method 1 does not require users to install Python separately.
+- Method 2 requires Python to be installed.
+- The current executable is a standalone application, not a traditional installation wizard. It does not automatically install the application into Program Files or create desktop shortcuts.
+
+**Be Safe. Be Secure!**
+
