@@ -46,7 +46,7 @@ On some systems, you may need to use `python3 --version` instead.
 Clone the repository and navigate to the project directory:
 
 ```bash
-git clone <YOUR-REPOSITORY-URL>
+git clone https://github.com/GHOST00010/Password-Generator-Tool.git
 cd passgen
 ```
 
